@@ -4,7 +4,7 @@ Hackatón EstudIA, reto **Nube e infraestructura (nivel básico)**. Ruta Local e
 
 | | |
 |---|---|
-| **Sitio publicado** | https://thomast-maker.github.io/Infra-Nube-Proyecto-Estud-IA/ *(activo cuando se configure GitHub Pages)* |
+| **Sitio publicado** | https://thomast-maker.github.io/Infra-Nube-Proyecto-Estud-IA/ |
 | **Versión actual** | v1.0.0 |
 | **Alojamiento** | GitHub Pages, publicando desde la carpeta `/docs` de la rama `main` |
 | **Copia independiente** | Carpeta compartida de Google Drive *[completar nombre]* |

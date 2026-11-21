@@ -24,9 +24,9 @@ Basada en `PLANTILLA_EVIDENCIAS.md` del paquete del reto. Los campos marcados co
 - **Versión y estado inicial:** v1.0.0 en `docs/` de `main`; Pages recién activado.
 - **Pasos para repetirla:** [PROCEDIMIENTOS.md §0 y §1](PROCEDIMIENTOS.md).
 - **Resultado esperado:** la URL muestra "Versión 1", el pie "v1.0.0" y el título en morado, desde ventana privada y en un navegador distinto al de configuración.
-- **Resultado observado:** *[completar]*
-- **URL:** *[completar]*
-- **Inicio, fin y duración:** *[completar]*
+- **Resultado observado:** Pages ya estaba configurado desde `main` + `/docs`, con HTTPS obligatorio activo. El despliegue del commit `a1c62ac` (merge del PR #1) quedó en estado `built` sin errores. Comprobado con curl a las 10:24:38 (hora de Colombia): la página responde HTTP 200 y contiene "Versión 1" y "v1.0.0"; `/styles.css` responde HTTP 200. La caché de Pages es `max-age=600` (10 min). *[completar: comprobación visual en ventana privada]*
+- **URL:** https://thomast-maker.github.io/Infra-Nube-Proyecto-Estud-IA/
+- **Inicio, fin y duración:** 21/11/2026, hora de Colombia (UTC−5). Inicio del despliegue: 10:06:50 · fin (`built`): 10:07:10 · duración: 20 s (dato de la API de GitHub Pages, `pages/builds/latest`).
 - **Evidencia:** *[completar: evidencias/B01_v1.png]*
 - **¿Cumple?** *[Sí / No / Parcial / No realizado]*
 - **Error encontrado y ajuste:** *[completar]*
