@@ -112,6 +112,8 @@ PR → aprueba el **revisor designado** → Merge → esperar Actions → verifi
 Si no se sabe qué commit causó el error, se restaura `docs/` exactamente como estaba en la última versión buena:
 
 ```
+git checkout main
+git pull
 git checkout -b recuperacion
 git checkout v2.0.0 -- docs/
 git commit -m "Restaura docs/ desde v2.0.0"
@@ -124,12 +126,19 @@ Si el revisor no está disponible y el sitio está mal publicado, el **admin** p
 
 ### 4.5 Si GitHub falla por completo
 
+Requisito: un clon local del repositorio hecho **antes** de la falla (el script vive en GitHub). Comandos desde la raíz de ese clon.
+
 1. Descargar de Drive el último ZIP de respaldo.
-2. Verificar su integridad (el script compara las huellas SHA-256 antes de copiar):
+2. Descomprimirlo **dentro de `respaldos/`**, de modo que quede `respaldos/NOMBRE_REAL/manifest.json` junto a `index.html` y `styles.css`. El script rechaza rutas fuera de `respaldos/`.
+3. Si no existe la carpeta `trabajo/`, crearla primero:
+   ```
+   python scripts/herramientas.py preparar
+   ```
+4. Restaurar. El script compara las huellas SHA-256 antes de copiar y no copia nada si no coinciden:
    ```
    python scripts/herramientas.py restaurar --respaldo respaldos/NOMBRE_REAL
    ```
-3. Demostrar en local con `python -m http.server 8000 --bind 127.0.0.1 --directory trabajo`, o subir `index.html` y `styles.css` a otro alojamiento estático.
+5. Demostrar en local con `python -m http.server 8000 --bind 127.0.0.1 --directory trabajo`, o subir `index.html` y `styles.css` a otro alojamiento estático.
 
 ## Problemas frecuentes
 
