@@ -276,13 +276,15 @@ Basada en `PLANTILLA_EVIDENCIAS.md` del paquete del reto. Los campos marcados co
 
 **Estado: pendiente. Todavía no se ha realizado.**
 
-- **Qué queremos comprobar:** otro integrante (que no sea el admin) repite la actualización o la recuperación solo con estas instrucciones.
-- **Quién la repite:** pendiente. Debe ser otra persona, no la segunda cuenta del admin.
-- **Procedimiento propuesto:** recuperación ([PROCEDIMIENTOS.md §4](PROCEDIMIENTOS.md)).
-- **Resultado observado:** pendiente.
-- **Dudas que tuvo y qué se corrigió en la documentación:** pendiente.
-- **Inicio, fin y duración:** pendiente.
-- **¿Cumple?** Todavía no se puede evaluar.
+- **Qué queremos comprobar:** que una integrante que no sea administradora pueda repetir el procedimiento de recuperación siguiendo únicamente las instrucciones documentadas.
+- **Quién la repite:** Elisa María Plazas (no administradora).
+- **Procedimiento propuesto:** recuperación mediante PROCEDIMIENTOS.md §4.2.
+- **Resultado observado:** se publicó un error controlado mediante un Pull Request. Se identificó el commit del error (95adec0) y se ejecutó git revert -m 1 95adec0. Se publicó la rama recuperacion mediante un Pull Request y se restauró correctamente la Versión 2 en GitHub Pages.
+- **Dudas que tuvo y qué se corrigió en la documentación:**  se aclaró la identificación del hash del merge, el uso del editor Vim y la conservación del commit de recuperación en una rama independiente.
+- **Inicio, fin y duración:** 27/11/2026 16:28  hasta 27/11/2026 16:56. 28 minutos.
+- **Evidencias:** B06_error.png, B06_error_simulado.png y B06_recuperado.png.
+- **¿Cumple?**  Sí. Una integrante no administradora ejecutó satisfactoriamente el procedimiento documentado y verificó la recuperación de la versión correcta.
+
 
 ---
 
