@@ -188,6 +188,7 @@ Basada en `PLANTILLA_EVIDENCIAS.md` del paquete del reto. Los campos marcados co
 
   ![B04: despliegues en GitHub Actions](evidencias/B04_actions_despliegues.png)
 
+  
   **Descripción:** pestaña *Actions* con los despliegues de Pages. Los números 7 (el error) y 8 (la recuperación) terminaron correctamente, en 23 s y 25 s. El reloj del equipo marca 17:06 del 26/11/2026.
 
 - **Pasos manuales y cuáles automatizaríamos:**
@@ -284,7 +285,8 @@ Basada en `PLANTILLA_EVIDENCIAS.md` del paquete del reto. Los campos marcados co
 - **Inicio, fin y duración:** 27/11/2026 16:28  hasta 27/11/2026 16:56. 28 minutos.
 - **Evidencias:** B06_error.png, B06_error_simulado.png y B06_recuperado.png.
 - **¿Cumple?**  Sí. Una integrante no administradora ejecutó satisfactoriamente el procedimiento documentado y verificó la recuperación de la versión correcta.
-
+![Error Simulado](evidencias/B06_error_simulado.png)
+![Recuperado](evidencias/B06_recuperado.png)
 
 ---
 
